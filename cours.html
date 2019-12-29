@@ -34,29 +34,30 @@
     </div>
 
     <center>
-        <button><b>B</b></button>
-        <button><i>i</i></button>
-        <button>underline</button>
+        <button onclick="makebold()"><b>B</b></button>
+        <button onclick="makeitalic()"><i>i</i></button>
+        <button onclick="makeunderline()">underline</button>
 
-        <select>
-            <option>20px</option>
-            <option>30px</option>
-            <option>40px</option>
+        <select id="size" onchange="dropdownlist()">
+            <option value="20px">20px</option>
+            <option value="30px">30px</option>
+            <option value="40px">40px</option>
         </select>
 
 
-        <select>
-            <option>arial</option>
-            <option>italique</option>
+        <select id="family" onchange="dropdownlistfamily()">
+            <option value="arial">arial</option>
+            <option value="italique">italique</option>
         </select>
 
         <h2>
             FeedBack
         </h2>
         <form>
-            <textarea cols="50" rows="20"></textarea>
+            <textarea id="text" cols="50" rows="20">hello world</textarea>
         </form>
     </center>
 </body>
+<script src="js/main.js"></script>
 
 </html>
