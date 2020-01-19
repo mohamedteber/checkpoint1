@@ -96,7 +96,43 @@ h2 {
     left: 500px;
 
 }
+
 #text {
     height: 200px;
     width: 400px;
+}
+
+#test {
+    color: aliceblue;
+}
+
+#first,
+#second,
+#third {
+    display: none;
+}
+
+#main,
+#child {
+    color: aliceblue;
+}
+
+.courses {
+    width: 20%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img1 {
+    background-image: url("../res/images.jpg");
+}
+
+#img2 {
+    background-image: url("../res/index_img1.png");
+}
+
+#img3 {
+    background-image: url("../res/images.png");
 }
