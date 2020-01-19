@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>courses</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
     <link rel="icon" href="res/gomycode_logo.jpg">
 </head>
 
@@ -25,16 +28,22 @@
     </div>
 
     <div class="tags">
-        <img src="res/images.jpg" alt="gomycode">
-        <img src="res/images.png" alt="gomycode">
-        <img src="res/index_img1.png" alt="gomycode">
-        <img src="res/index_img2.png" alt="gomycode">
-        <img src="res/index_img3.png" alt="gomycode">
+        <div class="courses" id="img1">
+            <a href="#ex1" rel="modal:open"><button>view more</button></a>
+        </div>
+        <div class="courses" id="img2">
+            <a href="#ex2" rel="modal:open"><button>view more</button></a>
+        </div>
+        <div class="courses" id="img3">
+            <a href="#ex3" rel="modal:open"><button>view more</button></a>
+        </div>
 
     </div>
 
+
     <center>
-        <button onclick="makebold()"><b>B</b></button>
+
+        <button id="B" onclick="makebold()"><b>B</b></button>
         <button onclick="makeitalic()"><i>i</i></button>
         <button onclick="makeunderline()">underline</button>
 
@@ -56,8 +65,30 @@
         <form>
             <textarea id="text" cols="50" rows="20">hello world</textarea>
         </form>
+        <button id="toggle">toggle</button>
+
     </center>
+    <div id="ex1" class="modal">
+        <p>Thanks for clicking. That felt good.</p>
+        <a href="#" rel="modal:close">Close</a>
+    </div>
+    <div id="ex2" class="modal">
+        <p>Thanks for clicking. That felt good.</p>
+        <a href="#" rel="modal:close">Close</a>
+    </div>
+    <div id="ex3" class="modal">
+        <p>Thanks for clicking. That felt good.</p>
+        <a href="#" rel="modal:close">Close</a>
+    </div>
+
 </body>
+<!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
 <script src="js/main.js"></script>
 
 </html>
