@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="res/gomycode_logo.jpg">
+    <script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <center>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img class="brand-img" alt="gomycode_logos"
+                    src="res/gomycode_logo.jpg"></a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a href="index.html">HOME</a>
+                <a href="cours.html">COURSES</a>
+                <a href="contact.html">CONTACT</a>
+                <form class="form-inline my-2 my-lg-0">
+                    <input aria-label="Search" class="form-control mr-sm-2" placeholder="Search" type="search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <h1 id="upper">contact </h1>
+        <div class="blur"></div>
+        <div class="form">
+            <div class="container">
+                <form id="contactForm">
+
+                    <label>name</label><input id="name" type="text" placeholder="write your name her">
+                    <br>
+                    <label>track</label>
+                    <select id="track">
+                        <option>web</option>
+                        <option>AI</option>
+                        <option>GAME</option>
+                    </select>
+                    <br>
+                    <label>email adress</label><input id="email" type="email" placeholder="write your email adress">
+                    <br>
+                    <label>phone number</label><input id="phonenumber" type="text"
+                        placeholder="write your phone number">
+                    <br>
+                    <button>submit</button>
+                    <br>
+                </form>
+            </div>
+        </div>
+
+    </center>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
