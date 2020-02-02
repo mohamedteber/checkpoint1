@@ -40,20 +40,21 @@
         <div class="blur"></div>
         <div class="form">
             <div class="container">
-                <form>
+                <form id="contactForm">
 
-                    <label>name</label><input type="text" placeholder="write your name her">
+                    <label>name</label><input id="name" type="text" placeholder="write your name her">
                     <br>
                     <label>track</label>
-                    <select>
+                    <select id="track">
                         <option>web</option>
                         <option>AI</option>
                         <option>GAME</option>
                     </select>
                     <br>
-                    <label>email adress</label><input type="email" placeholder="write your email adress">
+                    <label>email adress</label><input id="email" type="email" placeholder="write your email adress">
                     <br>
-                    <label>phone number</label><input type="text" placeholder="write your phone number">
+                    <label>phone number</label><input id="phonenumber" type="text"
+                        placeholder="write your phone number">
                     <br>
                     <button>submit</button>
                     <br>
@@ -63,7 +64,15 @@
 
     </center>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+    <script src="js/main.js"></script>
 </body>
-<script src="js/main.js"></script>
 
 </html>
